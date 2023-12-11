@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/recipes"
+        android:id="@+id/bot_nav_recipes" />
+    <item android:title="@string/meal_planner"
+        android:id="@+id/bot_nav_meal_planner"
+        />
+    <item android:title="@string/blog"
+        android:id="@+id/bot_nav_blog" />
+</menu>

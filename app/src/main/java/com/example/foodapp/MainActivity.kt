@@ -43,5 +43,24 @@ class MainActivity : AppCompatActivity() {
                 else -> "Tab ${position + 1}"
             }
         }.attach()
+
+        // Bottom Navigation
+        binding.bottomNavigationView.setOnItemSelectedListener { item ->
+            binding.viewpager.currentItem = when (item.itemId) {
+                R.id.bot_nav_recipes -> 0
+                R.id.bot_nav_meal_planner -> 1
+                R.id.bot_nav_blog -> 2
+                else -> 0
+            }
+            true
+        }
+
+        // Sync ViewPager2 page changes with BottomNavigationView
+        binding.viewpager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+            override fun onPageSelected(position: Int) {
+                if (position < 3)
+                    binding.bottomNavigationView.menu.getItem(position).isChecked = true
+            }
+        })
     }
 }
