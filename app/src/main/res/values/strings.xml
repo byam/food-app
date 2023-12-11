@@ -6,4 +6,7 @@
     <string name="contact">Contact</string>
     <string name="blog">Blog</string>
     <string name="about_me">About Me</string>
+    <string name="default_recipe_name">Default Recipe Name</string>
+    <string name="default_ingredients">Default ingredients</string>
+    <string name="default_instructions">Default instructions</string>
 </resources>
