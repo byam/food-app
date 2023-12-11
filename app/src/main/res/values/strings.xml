@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">FoodApp</string>
     <string name="btn_click">Click</string>
+    <string name="recipes">Recipes</string>
+    <string name="meal_planner">Meal Planner</string>
+    <string name="contact">Contact</string>
+    <string name="blog">Blog</string>
+    <string name="about_me">About Me</string>
 </resources>
