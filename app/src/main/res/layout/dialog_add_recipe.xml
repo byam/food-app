@@ -5,22 +5,34 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/add_new_recipe"
+        android:textColor="@color/purple_200"
+        android:textSize="20sp"
+        />
+
     <EditText
         android:id="@+id/editTextRecipeTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/recipe_title"/>
+        android:inputType="text"
+        android:hint="@string/recipe_name"/>
 
     <EditText
         android:id="@+id/editTextIngredients"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100sp"
+        android:inputType="text"
         android:hint="@string/ingredients"/>
 
     <EditText
         android:id="@+id/editTextInstructions"
+        android:inputType="text"
+        android:layout_height="100sp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:hint="@string/instructions"/>
 
     <Button
