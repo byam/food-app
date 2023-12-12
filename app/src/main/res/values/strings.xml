@@ -9,4 +9,9 @@
     <string name="default_recipe_name">Default Recipe Name</string>
     <string name="default_ingredients">Default ingredients</string>
     <string name="default_instructions">Default instructions</string>
+    <string name="new_recipe">New Recipe</string>
+    <string name="recipe_title">Recipe title</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="instructions">Instructions</string>
+    <string name="add_recipe">Add recipe</string>
 </resources>
