@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/add_new_meal_plan"
+        android:textColor="@color/purple_200"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/editTextMealPlanDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:hint="@string/meal_plan_date"
+        android:inputType="none"/>
+
+    <Spinner
+        android:id="@+id/spinnerMealPlanType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteMealPlanRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/meal_plan_recipe"/>
+
+    <Button
+        android:id="@+id/buttonAddMealPlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:text="@string/add_meal_plan"/>
+
+</LinearLayout>

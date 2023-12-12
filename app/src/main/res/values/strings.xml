@@ -15,4 +15,74 @@
     <string name="instructions">Instructions</string>
     <string name="add_recipe">Add recipe</string>
     <string name="add_new_recipe">Add New Recipe</string>
+    <string name="add_new_meal_plan">Add new meal plan</string>
+    <string name="default_weekday">Default Weekday</string>
+    <string name="default_meal_plan_date">12–11–2023</string>
+    <string name="default_meal_plan_type">Default meal plan type</string>
+    <string name="default_meal_plan_name">Default meal plan name</string>
+    <string name="meal_plan_date">Date: "03–23–2023"</string>
+    <string name="meal_plan_type">Lunch, Dinner or Breakfast</string>
+    <string name="meal_plan_recipe">Recipe</string>
+    <string name="add_meal_plan">Add Plan</string>
+
+    <string-array name="meal_types">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+    </string-array>
+
+    <string-array name="recipe_names">
+        <item>Spaghetti Bolognese</item>
+        <item>Margherita Pizza</item>
+        <item>Classic Cheeseburger</item>
+        <item>Vegetable Stir Fry</item>
+        <item>Chicken Caesar Salad</item>
+        <item>Beef Stew</item>
+        <item>Roast Chicken</item>
+        <item>Lasagna</item>
+        <item>Grilled Cheese Sandwich</item>
+        <item>Shepherd's Pie</item>
+        <item>Chicken Curry</item>
+        <item>Beef Tacos</item>
+        <item>Meatloaf</item>
+        <item>Chicken Noodle Soup</item>
+        <item>BBQ Ribs</item>
+        <item>Chili Con Carne</item>
+        <item>Pancakes</item>
+        <item>Macaroni and Cheese</item>
+        <item>French Toast</item>
+        <item>Fish and Chips</item>
+        <item>Caesar Salad</item>
+        <item>Pulled Pork Sandwich</item>
+        <item>Vegetable Curry</item>
+        <item>Chicken Alfredo Pasta</item>
+        <item>Tomato Soup</item>
+        <item>Chicken Tikka Masala</item>
+        <item>Pesto Pasta</item>
+        <item>Quiche Lorraine</item>
+        <item>Pad Thai</item>
+        <item>Fajitas</item>
+        <item>Beef Stroganoff</item>
+        <item>Chicken Parmesan</item>
+        <item>Greek Salad</item>
+        <item>Paella</item>
+        <item>Carbonara</item>
+        <item>Fried Chicken</item>
+        <item>Banana Bread</item>
+        <item>Clam Chowder</item>
+        <item>Ratatouille</item>
+        <item>Chicken Biryani</item>
+        <item>French Onion Soup</item>
+        <item>Chicken Marsala</item>
+        <item>Tuna Casserole</item>
+        <item>Egg Salad</item>
+        <item>Sushi Rolls</item>
+        <item>Chicken Fajitas</item>
+        <item>Stuffed Peppers</item>
+        <item>Shrimp Scampi</item>
+        <item>Mushroom Risotto</item>
+        <item>Chicken Enchiladas</item>
+    </string-array>
+
+
 </resources>
