@@ -9,6 +9,70 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/about_me"
+        android:textColor="@color/purple_200"
+        android:textSize="25sp"
+        android:layout_margin="5sp"        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_avatar_male"
+        android:layout_gravity="center"
+        android:layout_margin="5sp"
+        android:id="@+id/me_image"
         />
 
+    <TextView
+        android:id="@+id/me_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_user_name"
+        android:layout_gravity="center"
+        android:textColor="@color/purple_200"
+        android:textSize="15sp"
+        android:layout_margin="5sp"
+        />
+
+    <TextView
+        android:id="@+id/me_recipe_names"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Written Recipes"
+        android:layout_gravity="center"
+        android:textColor="@color/purple_200"
+        android:textSize="15sp"
+        android:layout_margin="5sp"
+        />
+
+    <TextView
+        android:id="@+id/me_blogs_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Written Blogs"
+        android:layout_gravity="center"
+        android:textColor="@color/purple_200"
+        android:textSize="15sp"
+        android:layout_margin="5sp"
+        />
+
+    <TextView
+        android:id="@+id/me_plan_dates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meal Plans"
+        android:layout_gravity="center"
+        android:textColor="@color/purple_200"
+        android:textSize="15sp"
+        android:layout_margin="5sp"
+        />
+
+    <Button
+        android:layout_margin="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/purple_200"
+        android:textColor="@color/white"
+        android:text="@string/edit"
+    />
 </LinearLayout>

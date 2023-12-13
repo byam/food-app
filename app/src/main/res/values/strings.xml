@@ -37,6 +37,7 @@
     <string name="blog_content">Blog Content</string>
     <string name="add_new_blog">Add new blog</string>
     <string name="add">Add</string>
+    <string name="edit">Edit</string>
 
     <string-array name="meal_types">
         <item>Breakfast</item>

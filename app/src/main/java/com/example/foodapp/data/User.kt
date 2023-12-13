@@ -7,4 +7,5 @@ data class User(
     val password: String, // h123123
     val phone: String, // 16122339211
     val imageUri: Int, // https://myimage.png
+    val bio: String = "",
 )
