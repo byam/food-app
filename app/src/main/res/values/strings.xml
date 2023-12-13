@@ -3,7 +3,7 @@
     <string name="btn_click">Click</string>
     <string name="recipes">Recipes</string>
     <string name="meal_planner">Meal Planner</string>
-    <string name="contact">Contact</string>
+    <string name="contact">Contact with Chefs</string>
     <string name="blog">Blog</string>
     <string name="about_me">About Me</string>
     <string name="default_recipe_name">Default Recipe Name</string>
@@ -24,6 +24,9 @@
     <string name="meal_plan_type">Lunch, Dinner or Breakfast</string>
     <string name="meal_plan_recipe">Recipe</string>
     <string name="add_meal_plan">Add Plan</string>
+    <string name="user_image">User image</string>
+    <string name="user_email">User Email</string>
+    <string name="default_user_name">Default user name</string>
 
     <string-array name="meal_types">
         <item>Breakfast</item>
@@ -41,7 +44,7 @@
         <item>Roast Chicken</item>
         <item>Lasagna</item>
         <item>Grilled Cheese Sandwich</item>
-        <item>Shepherd's Pie</item>
+        <item>Shepherd Pie</item>
         <item>Chicken Curry</item>
         <item>Beef Tacos</item>
         <item>Meatloaf</item>

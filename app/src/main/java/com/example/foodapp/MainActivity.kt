@@ -1,10 +1,12 @@
 package com.example.foodapp
 
+import UserPreferences
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.example.foodapp.adapter.ViewPagerAdapter
+import com.example.foodapp.data.User
 import com.example.foodapp.databinding.ActivityMainBinding
 import com.example.foodapp.fragment.AboutMeFragment
 import com.example.foodapp.fragment.BlogFragment
@@ -20,6 +22,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // Save static users
+        val userPreferences = UserPreferences(this)
+        if (userPreferences.getUsers().isEmpty()) {
+            // Default users
+            val users = arrayListOf(
+                User(1, "Harry Potter", "harry@example.com", "secret", "1234567890", R.drawable.ic_avatar_male),
+                User(2, "Hermione Granger", "hermione@example.com", "secret", "1234567891", R.drawable.ic_avatar_female),
+                User(3, "Ron Weasley", "ron@example.com", "secret", "1234567892", R.drawable.ic_avatar_male)
+            )
+            userPreferences.saveUsers(users)
+        }
 
         // Tabs and swipes
         val tabLayout: TabLayout = binding.tabLayout
