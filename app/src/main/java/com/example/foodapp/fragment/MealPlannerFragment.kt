@@ -1,5 +1,6 @@
 package com.example.foodapp.fragment
 
+import UserPreferences
 import android.app.AlertDialog
 import android.app.DatePickerDialog
 import android.os.Bundle
@@ -38,16 +39,11 @@ class MealPlannerFragment: Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // Static recipes
-        mealPlans = arrayListOf(
-            MealPlan(id = 1, date = "2023-12-11", mealType = "Breakfast", recipe = "Pancakes"),
-            MealPlan(id = 2, date = "2023-12-11", mealType = "Lunch", recipe = "Chicken Caesar Salad"),
-            MealPlan(id = 3, date = "2023-12-11", mealType = "Dinner", recipe = "Spaghetti Carbonara"),
-            MealPlan(id = 4, date = "2023-12-12", mealType = "Breakfast", recipe = "French Toast"),
-            MealPlan(id = 5, date = "2023-12-12", mealType = "Lunch", recipe = "Vegetable Stir Fry")
-        )
+        val userPreferences = UserPreferences(requireContext())
+        mealPlans = userPreferences.getMealPlans()
 
         // Set recycler view adapter
-        val recipeAdapter = MealPlanAdapter(mealPlans)
+        val recipeAdapter = MealPlanAdapter(view.context, mealPlans)
         binding.recViewMealPlan.adapter = recipeAdapter
         binding.recViewMealPlan.layoutManager = LinearLayoutManager(view.context)
 
@@ -92,12 +88,15 @@ class MealPlannerFragment: Fragment() {
         val recipes = resources.getStringArray(R.array.recipe_names)
         recipeAutoComplete.setAdapter(ArrayAdapter(requireContext(), android.R.layout.simple_dropdown_item_1line, recipes))
 
+        val currentUser = UserPreferences(requireContext()).getCurrentUser()
+
         addButton.setOnClickListener {
             val newMealPlan = MealPlan(
                 id = mealPlans.size + 1,
                 date = dateEditText.text.toString(),
                 mealType = mealTypeSpinner.selectedItem.toString(),
-                recipe = recipeAutoComplete.text.toString()
+                recipe = recipeAutoComplete.text.toString(),
+                userId = currentUser!!.id,
             )
             mealPlans.add(newMealPlan)
             binding.recViewMealPlan.adapter?.notifyDataSetChanged()

@@ -7,13 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.foodapp.R
 import com.example.foodapp.adapter.ContactAdapter
-import com.example.foodapp.adapter.MealPlanAdapter
-import com.example.foodapp.data.MealPlan
-import com.example.foodapp.data.User
 import com.example.foodapp.databinding.FragmentContactBinding
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class ContactFragment: Fragment(){
     private lateinit var binding: FragmentContactBinding
