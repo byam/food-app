@@ -21,4 +21,18 @@ class UserPreferences(context: Context) {
             arrayListOf()
         }
     }
+
+    fun saveCurrentUser(user: User) {
+        val json = gson.toJson(user)
+        sharedPreferences.edit().putString("currentUser", json).apply()
+    }
+
+    fun getCurrentUser(): User? {
+        val json = sharedPreferences.getString("currentUser", null)
+        return if (json != null) {
+            gson.fromJson(json, User::class.java)
+        } else {
+            null
+        }
+    }
 }

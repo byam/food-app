@@ -27,6 +27,12 @@
     <string name="user_image">User image</string>
     <string name="user_email">User Email</string>
     <string name="default_user_name">Default user name</string>
+    <string name="sign_in">Sign In</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="harry_example_com">harry@example.com</string>
+    <string name="hello_user">Hello User!</string>
 
     <string-array name="meal_types">
         <item>Breakfast</item>
