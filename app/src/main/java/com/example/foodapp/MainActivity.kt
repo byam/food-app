@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.example.foodapp.adapter.ViewPagerAdapter
+import com.example.foodapp.data.Blog
 import com.example.foodapp.data.MealPlan
 import com.example.foodapp.data.Recipe
 import com.example.foodapp.data.User
@@ -101,6 +102,23 @@ class MainActivity : AppCompatActivity() {
                 MealPlan(9, "2023-12-03", "Dinner", "Chocolate Frogs", 3)
             )
             userPreferences.saveMealPlans(mealPlans)
+        }
+
+        if(userPreferences.getBlogs().isEmpty()) {
+            val blogs = arrayListOf(
+                Blog(1, "Wizarding World Cuisine",
+                    "Explore the magical tastes of Hogwarts with an in-depth look into the wizarding world's unique culinary delights. From the hearty meals served in the Great Hall to the whimsical treats found at Hogsmeade, discover how food enhances the magic of the wizarding world.",
+                    R.drawable.hogwards, "2023-01-01", 1),
+
+                Blog(2, "Potions in Cooking",
+                    "Dive into the fascinating intersection of potions and cooking in the wizarding world. Learn how certain ingredients can bring a magical twist to your dishes. This blog explores the use of potion-making techniques in everyday cooking, revealing secrets behind some of the most enchanting meals.",
+                    R.drawable.hogwards2, "2023-01-02", 2),
+
+                Blog(3, "Feasts at Hogwarts",
+                    "Reminisce about the grand feasts at the Great Hall of Hogwarts. This blog takes you on a journey through the lavish banquets, detailing the variety of dishes served during different occasions. Discover the stories behind the sumptuous spreads that bring the Hogwarts community together.",
+                    R.drawable.hogwards3, "2023-01-03", 3)
+            )
+            userPreferences.saveBlogs(blogs)
         }
 
         // Check if user is signed in and update UI accordingly

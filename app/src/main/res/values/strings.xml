@@ -33,6 +33,10 @@
     <string name="sign_out">Sign Out</string>
     <string name="harry_example_com">harry@example.com</string>
     <string name="hello_user">Hello User!</string>
+    <string name="blog_title">Blog title</string>
+    <string name="blog_content">Blog Content</string>
+    <string name="add_new_blog">Add new blog</string>
+    <string name="add">Add</string>
 
     <string-array name="meal_types">
         <item>Breakfast</item>
