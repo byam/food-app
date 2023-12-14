@@ -10,6 +10,10 @@ class UserPreferences(context: Context) {
     private val sharedPreferences = context.getSharedPreferences("UserPreferences", Context.MODE_PRIVATE)
     private val gson = Gson()
 
+    fun clearAllData() {
+        sharedPreferences.edit().clear().apply()
+    }
+
     fun saveUsers(users: ArrayList<User>) {
         val json = gson.toJson(users)
         sharedPreferences.edit().putString("users", json).apply()

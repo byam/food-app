@@ -49,6 +49,7 @@
             android:layout_gravity="end"
             android:layout_margin="5sp"
             android:gravity="center"
+            android:textColor="@color/purple_700"
             />
         <ImageButton
             android:src="@drawable/ic_sign_out"

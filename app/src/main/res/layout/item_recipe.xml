@@ -19,6 +19,7 @@
         android:id="@+id/recipe_ingredients"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/purple_500"
         android:text="@string/default_ingredients"
         android:textSize="12sp"
         android:layout_marginBottom="5dp"/>
@@ -29,10 +30,13 @@
         android:layout_height="wrap_content"
         android:textSize="15sp"
         android:text="@string/default_instructions"
+        android:maxLines="10"
+        android:scrollHorizontally="false"
         />
 
     <TextView
         android:id="@+id/recipe_user_name"
+        android:textColor="@color/purple_700"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="10sp"

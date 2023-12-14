@@ -34,5 +34,6 @@ class AboutMeFragment: Fragment(){
         binding.meRecipeNames.text = "Recipes: ${ recipes.joinToString(separator = ", ") { it.name } }"
         binding.meBlogsName.text = "Blogs: ${ blogs.joinToString(separator = ", ") { it.title } }"
         binding.mePlanDates.text = "Meal Plan dates: ${ plans.joinToString(separator = ", ") { it.date } }"
+        binding.meBio.text = currentUser.bio
     }
 }

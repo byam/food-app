@@ -28,8 +28,8 @@
         android:layout_height="wrap_content"
         android:text="@string/default_user_name"
         android:layout_gravity="center"
-        android:textColor="@color/purple_200"
-        android:textSize="15sp"
+        android:textColor="@color/purple_700"
+        android:textSize="18sp"
         android:layout_margin="5sp"
         />
 
@@ -66,7 +66,20 @@
         android:layout_margin="5sp"
         />
 
+    <TextView
+        android:id="@+id/me_bio"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/default_bio"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:layout_margin="5sp"
+        android:maxLines="10"
+        android:scrollHorizontally="false"
+    />
     <Button
+        android:id="@+id/me_btn_edit"
         android:layout_margin="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

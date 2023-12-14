@@ -33,33 +33,18 @@ class MainActivity : AppCompatActivity() {
 
         // Save static users, recipes, blogs, meal plans
         userPreferences = UserPreferences(this)
+        userPreferences.clearAllData()
         if (userPreferences.getUsers().isEmpty()) {
             // Default users
             val users = arrayListOf(
-                User(
-                    1,
-                    "Harry Potter",
-                    "harry@example.com",
-                    "secret",
-                    "1231231234",
-                    R.drawable.ic_avatar_male
-                ),
-                User(
-                    2,
-                    "Hermione Granger",
-                    "hermione@example.com",
-                    "secret",
-                    "1231231234",
-                    R.drawable.ic_avatar_female
-                ),
-                User(
-                    3,
-                    "Ron Weasley",
-                    "ron@example.com",
-                    "secret",
-                    "1234567892",
-                    R.drawable.ic_avatar_male
-                )
+                User(1, "Harry Potter", "harry@example.com", "secret", "1231231234", R.drawable.ic_avatar_male,
+                    "A wizard with a knack for adventurous and bold flavors. Harry enjoys experimenting with traditional wizarding recipes and adding his own twist. Favorite recipe: Treacle Tart."),
+
+                User(2, "Hermione Granger", "hermione@example.com", "secret", "1231231234", R.drawable.ic_avatar_female,
+                    "An expert in potion-making, Hermione brings precision and meticulousness to her cooking. She loves creating dishes that are both nutritious and delicious. Favorite recipe: Pumpkin Pasties."),
+
+                User(3, "Ron Weasley", "ron@example.com", "secret", "1234567892", R.drawable.ic_avatar_male,
+                    "Ron's food philosophy is all about comfort and generosity. He has a special place in his heart for hearty, family-style meals. Favorite recipe: Cornish Pasties.")
             )
             userPreferences.saveUsers(users)
         }
